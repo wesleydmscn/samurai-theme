@@ -1,0 +1,23 @@
+id = "samurai"
+name = "Samurai Theme"
+version = "0.0.1"
+schema_version = 1
+description = "It's me, Master Sega and this is Kid Chameleon"
+repository = "https://github.com/wesleydmscn/samurai-theme"
+authors = ["wesleydmscn"]
+themes = ["themes/samurai.json"]
+icon_themes = []
+languages = []
+capabilities = []
+
+[lib]
+
+[grammars]
+
+[language_servers]
+
+[context_servers]
+
+[slash_commands]
+
+[indexed_docs_providers]
