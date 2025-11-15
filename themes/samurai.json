@@ -42,7 +42,7 @@
         "editor.document_highlight.write_background": "#1414141e",
         "editor.foreground": "#B4B4B4",
         "editor.gutter.background": "#101010",
-        "editor.highlighted_line.background": "#ededed",
+        "editor.highlighted_line.background": "#303030",
         "editor.indent_guide": "#202020",
         "editor.indent_guide_active": "#363636",
         "editor.invisible": "#1414145e",
