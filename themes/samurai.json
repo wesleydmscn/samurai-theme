@@ -7,9 +7,7 @@
       "name": "Samurai Dark",
       "appearance": "dark",
       "style": {
-        "accents": [],
-
-        "background": "#101010",
+        "background": "#141414",
         "background.appearance": "opaque",
 
         "border": "#242424",
@@ -47,11 +45,12 @@
         "editor.indent_guide_active": "#363636",
         "editor.invisible": "#1414145e",
         "editor.line_number": "#404040",
+        "editor.hover_line_number": "#61616b",
         "editor.subheader.background": "#101010",
         "editor.active_wrap_guide": "#14141426",
 
         "element.active": "#1414141e",
-        "element.background": "#101010",
+        "element.background": "#141414",
         "element.disabled": "#101010",
         "element.hover": "#1C1C1C",
         "element.selected": "#1C1C1C",
@@ -431,7 +430,7 @@
         "text.accent": "#3c7cab",
         "text.disabled": "#ffffff50",
         "text.muted": "#ffffff50",
-        "text.placeholder": "#1414147a",
+        "text.placeholder": "#404040",
         "title_bar.background": "#101010",
         "title_bar.inactive_background": "#101010",
 
