@@ -7,7 +7,7 @@
       "name": "Samurai Dark",
       "appearance": "dark",
       "style": {
-        "background": "#141414",
+        "background": "#090909",
         "background.appearance": "opaque",
 
         "border": "#242424",
@@ -84,7 +84,7 @@
         "ignored": "#ffffff30",
 
         "info": "#206595",
-        "info.background": "#2065951a",
+        "info.background": "#161616",
         "info.border": "#206595",
 
         "link_text.hover": "#222222",
