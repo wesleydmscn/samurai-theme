@@ -21,9 +21,9 @@
         "conflict.background": "#c085321a",
         "conflict.border": "#c08532",
 
-        "created": "#1f8a65",
-        "created.background": "#1f8a651a",
-        "created.border": "#1f8a65",
+        "created": "#497d00",
+        "created.background": "#497d001a",
+        "created.border": "#497d00",
 
         "deleted": "#cf2d56",
         "deleted.background": "#cf2d561a",
@@ -139,9 +139,9 @@
             "selection": "#db704b3d"
           },
           {
-            "cursor": "#1f8a65",
-            "background": "#1f8a65",
-            "selection": "#1f8a653d"
+            "cursor": "#497d00",
+            "background": "#497d00",
+            "selection": "#497d003d"
           }
         ],
 
@@ -163,9 +163,9 @@
 
         "status_bar.background": "#090909",
 
-        "success": "#1f8a65",
-        "success.background": "#1f8a651a",
-        "success.border": "#1f8a65",
+        "success": "#497d00",
+        "success.background": "#497d001a",
+        "success.border": "#497d00",
 
         "surface.background": "#090909",
 
@@ -251,7 +251,7 @@
             "font_weight": null
           },
           "namespace": {
-            "color": "#141414eb",
+            "color": "#cf2d56",
             "font_style": null,
             "font_weight": null
           },
@@ -316,7 +316,7 @@
             "font_weight": null
           },
           "selector": {
-            "color": "#1f8a65",
+            "color": "#497d00",
             "font_style": null,
             "font_weight": null
           },
@@ -326,7 +326,7 @@
             "font_weight": null
           },
           "string": {
-            "color": "#1f8a65",
+            "color": "#497d00",
             "font_style": null,
             "font_weight": null
           },
@@ -356,7 +356,7 @@
             "font_weight": null
           },
           "text.literal": {
-            "color": "#1f8a65",
+            "color": "#497d00",
             "font_style": null,
             "font_weight": null
           },
@@ -393,7 +393,7 @@
 
         "terminal.ansi.background": null,
         "terminal.ansi.black": "#141414eb",
-        "terminal.ansi.blue": "#1f8a65",
+        "terminal.ansi.blue": "#497d00",
         "terminal.ansi.bright_black": "#141414ad",
         "terminal.ansi.bright_blue": "#6299c3",
         "terminal.ansi.bright_cyan": "#6f9ba6",
@@ -408,7 +408,7 @@
         "terminal.ansi.dim_black": "#ffffff",
         "terminal.ansi.dim_blue": "#3c7cab",
         "terminal.ansi.dim_cyan": "#4c7f8c",
-        "terminal.ansi.dim_green": "#1f8a65",
+        "terminal.ansi.dim_green": "#497d00",
         "terminal.ansi.dim_magenta": "#b8448b",
         "terminal.ansi.dim_red": "#cf2d56",
         "terminal.ansi.dim_white": "#fcfcfc",
