@@ -6,4 +6,4 @@ The theme is inspired by the colors of the characters from Kid Chameleon, one of
 
 | Dark |
 |------|
-| <img width="1385" height="951" alt="image" src="https://github.com/user-attachments/assets/de70a45b-3785-4f8b-b649-adab63904e2b" /> |
+| <img width="1537" height="966" alt="image" src="https://github.com/user-attachments/assets/f9855ec2-29d6-48cf-9421-351f36a60d6a" /> |
