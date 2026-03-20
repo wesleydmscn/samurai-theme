@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storefront</title>
+    <link rel="stylesheet" href="example.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__logo" href="/">Storefront</a>
+        <ul class="nav__links" role="list">
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <button class="btn btn--icon" aria-label="Open cart" data-action="open-cart">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="badge" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 id="hero-title" class="hero__title">New Arrivals</h1>
+          <p class="hero__subtitle">Curated picks for the season</p>
+          <a href="/products" class="btn btn--primary">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="products-title">
+        <div class="container">
+          <h2 id="products-title">Featured Products</h2>
+          <div class="product-grid" id="product-grid" role="list">
+
+            <article class="product-card" role="listitem" data-id="1">
+              <a href="/products/1">
+                <figure class="product-card__image">
+                  <img src="laptop.webp" alt="Laptop Pro 15" width="400" height="300" loading="lazy" />
+                </figure>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Laptop Pro 15</h3>
+                  <p class="product-card__description">High-performance laptop for professionals.</p>
+                  <div class="product-card__footer">
+                    <span class="product-card__price" aria-label="Price: $999.99">$999.99</span>
+                    <button class="btn btn--primary btn--sm" data-action="add-to-cart" data-product-id="1">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="product-card" role="listitem" data-id="2">
+              <a href="/products/2">
+                <figure class="product-card__image">
+                  <img src="mouse.webp" alt="Wireless Mouse" width="400" height="300" loading="lazy" />
+                </figure>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Wireless Mouse</h3>
+                  <p class="product-card__description">Ergonomic wireless mouse with long battery life.</p>
+                  <div class="product-card__footer">
+                    <span class="product-card__price" aria-label="Price: $29.99">$29.99</span>
+                    <button class="btn btn--primary btn--sm" data-action="add-to-cart" data-product-id="2">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" hidden>
+      <div class="cart-drawer__header">
+        <h2>Your Cart</h2>
+        <button class="btn btn--icon" aria-label="Close cart" data-action="close-cart">&#x2715;</button>
+      </div>
+      <ul class="cart-drawer__items" id="cart-items" role="list"></ul>
+      <footer class="cart-drawer__footer">
+        <p>Total: <strong id="cart-total">$0.00</strong></p>
+        <button class="btn btn--primary btn--full">Checkout</button>
+      </footer>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Storefront. All rights reserved.</p>
+        <nav aria-label="Footer links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module">
+      const products = {
+        1: { name: "Laptop Pro 15", price: 999.99 },
+        2: { name: "Wireless Mouse", price: 29.99 },
+      };
+
+      const cart = new Map();
+
+      function updateCartUI() {
+        const count = [...cart.values()].reduce((s, q) => s + q, 0);
+        const total = [...cart.entries()].reduce((s, [id, q]) => s + products[id].price * q, 0);
+        document.getElementById("cart-count").textContent = count;
+        document.getElementById("cart-total").textContent = `$${total.toFixed(2)}`;
+
+        const list = document.getElementById("cart-items");
+        list.innerHTML = [...cart.entries()].map(([id, qty]) =>
+          `<li>${products[id].name} &times; ${qty}</li>`
+        ).join("");
+      }
+
+      document.body.addEventListener("click", (e) => {
+        const action = e.target.closest("[data-action]")?.dataset.action;
+        if (action === "add-to-cart") {
+          const id = e.target.closest("[data-product-id]").dataset.productId;
+          cart.set(id, (cart.get(id) ?? 0) + 1);
+          updateCartUI();
+        }
+        if (action === "open-cart") document.getElementById("cart-drawer").hidden = false;
+        if (action === "close-cart") document.getElementById("cart-drawer").hidden = true;
+      });
+    </script>
+  </body>
+</html>
