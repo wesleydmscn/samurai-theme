@@ -2,6 +2,6 @@
 
 A dark theme built to carry the same atmosphere as my blog, [wesleydmscn.com](https://www.wesleydmscn.com). Near-black background, a restrained palette, and the same indigo-blue accent as the blog, so the editor feels like a continuation of that space rather than a separate one.
 
-| Dark Default | Blue-Red Swap |
-|--|--|
-| <img width="1552" height="981" alt="image" src="https://github.com/user-attachments/assets/21bfa6fb-b6c9-4ede-b85d-be90560e2314" /> | <img width="1536" height="966" alt="image" src="https://github.com/user-attachments/assets/92d84158-df66-4276-8c85-3883f5645a4d" /> |
+| Dark Default | Blue-Red Swap | Blue Twotone |
+|--|--|--|
+| <img width="1552" height="981" alt="image" src="https://github.com/user-attachments/assets/3ea18814-9d7e-414b-bd50-45e6295870c6" /> | <img width="1552" height="981" alt="image" src="https://github.com/user-attachments/assets/88d16c70-d251-4c87-b4ac-733299ea2e12" /> | <img width="1552" height="981" alt="image" src="https://github.com/user-attachments/assets/75a64131-ae54-4e02-ae38-fd528e8b2b7a" /> |
